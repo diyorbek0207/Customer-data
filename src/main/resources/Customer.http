@@ -1,0 +1,12 @@
+### customer post
+POST localhost:8080/customer
+Content-Type: application/json
+
+{
+  "name": "Diyorbek",
+  "surname": "Shodmonov",
+  "password": "0207",
+  "phone": "904559518",
+  "role": "ROLE_ADMIN",
+  "status": "ACTIVE"
+}

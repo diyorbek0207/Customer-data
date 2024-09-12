@@ -1,0 +1,43 @@
+### date post
+POST localhost:8080/date
+Content-Type: application/json
+Authorization: Basic OTA0NTU5NTE4OjAyMDc=
+
+{
+  "total": "Uy",
+  "content": "Toshkent Sityda 200 ming dollorlik"
+}
+
+### get all
+GET localhost:8080/date/customerId
+Authorization: Basic OTA0NTU5NTE4OjAyMDc=
+### get all
+GET localhost:8080/date
+Authorization:  Basic OTA0NTU5NTE4OjAyMDc=
+
+### put date
+PUT localhost:8080/date/4028e4d491a204360191a20490b70000
+Content-Type: application/json
+Authorization:  Basic OTA0NTU5NTE4OjAyMDc=
+
+{
+  "total": "houm",
+  "content": "uy kvartira"
+}
+
+### delete
+DELETE localhost:8080/date/4028e4d491a1fe950191a2000e1c0000/admin
+Authorization: Basic OTA0NTU5NTE4OjAyMDc=
+
+### get pagination
+GET localhost:8080/date/pagination?page=2&size=2
+Authorization: Basic OTA0NTU5NTE4OjAyMDc=
+
+### get filter
+GET localhost:8080/date/filter?page=1&size=2
+Content-Type: application/json
+Authorization: Basic OTA0NTU5NTE4OjAyMDc=
+
+{
+  "total": "Uy"
+}
